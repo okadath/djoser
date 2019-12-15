@@ -1,9 +1,15 @@
 ======
 djoser
 ======
-```bash
-pipenv install git+https://github.com/okadath/djoser.git@master#egg=djoser
-```
+
+Este es un modulo creado especialmente sin los meodos de validacion y recuperacion de cuenta y usuario, para emails usaremos sendmail, necesitamos un dominio
+
+Instalar:
+
+.. code-block::
+
+   pipenv install git+https://github.com/okadath/djoser.git@master#egg=djoser
+
 
 
 .. image:: https://img.shields.io/pypi/v/djoser.svg
