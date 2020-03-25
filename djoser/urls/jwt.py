@@ -5,4 +5,6 @@ urlpatterns = [
     url(r"^jwt/create/?", views.TokenObtainPairView.as_view(), name="jwt-create"),
     url(r"^jwt/refresh/?", views.TokenRefreshView.as_view(), name="jwt-refresh"),
     url(r"^jwt/verify/?", views.TokenVerifyView.as_view(), name="jwt-verify"),
+    #mi login con el code
+    url(r"^jwt/create_token_with_code/?", views.Code_TokenObtainPairView.as_view(), name="jwt-create_token_with_code"),
 ]
