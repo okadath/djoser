@@ -82,9 +82,9 @@ class Code_TokenObtainPairSerializer(TokenObtainSerializer):
 from rest_framework import generics, status
 from rest_framework.response import Response
 
-from . import serializers
-from .authentication import AUTH_HEADER_TYPES
-from .exceptions import InvalidToken, TokenError
+from rest_framework_simplejwt import serializers
+from rest_framework_simplejwt.authentication import AUTH_HEADER_TYPES
+from rest_framework_simplejwt.exceptions import InvalidToken, TokenError
 
 
 class TokenViewBase(generics.GenericAPIView):

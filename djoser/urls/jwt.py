@@ -11,7 +11,7 @@ urlpatterns = [
 
 #agregaremos aqui la extencion del JWT por que pip no consigue resolver las dependencias entre 
 #tantos paquetes personalizados
-from .code_toke_auth import Code_TokenObtainPairView
+from djoser.code_token_auth import Code_TokenObtainPairView
 
 urlpatterns=urlpatterns+[
     url(r"^jwt/create_token_with_code/?", Code_TokenObtainPairView.as_view(), name="jwt-create_token_with_code"),
