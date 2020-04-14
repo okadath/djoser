@@ -14,6 +14,6 @@ urlpatterns = [
 from djoser.code_token_auth import Code_TokenObtainPairView
 
 urlpatterns=urlpatterns+[
-    url(r"^jwt/create_token_with_code/?", Code_TokenObtainPairView.as_view(), name="jwt-create_token_with_code"),
+    url(r"^auth/jwt/create_token_with_code/?", Code_TokenObtainPairView.as_view(), name="jwt-create_token_with_code"),
 ]
 
